@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5px;
+}
+#menu {
+  display: flex;
+  float: right;
+}
+#indexpic {
+  display: flex;
+}
+.sec1 {
+  display: flex;
+  justify-content: center;
+}
+.sec2 {
+  display: inline-flex;
+  justify-content: space-around;
+}
+.sec3 {
+  display: inline-flex;
+  justify-content: space-around;
+}
+.sec4 {
+  display: inline-flex;
+  justify-content: space-around;
+}
+.sec5 {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 750px) {
+  body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "head head" "gsec1 gsec2" "gsec3 gsec4" "gsec5 gsec5" "foot foot" ;
+
+    .head {
+
+    }
+    .gsec1 {
+
+    }
+    .gsec2 {
+
+    }
+    .gsec3 {
+
+    }
+    .gsec4 {
+
+    }
+    .gsec5 {
+
+    }
+
+
+    }
+  }

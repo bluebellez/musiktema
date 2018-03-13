@@ -4,24 +4,53 @@
     <meta charset="UTF-8">
     <title>Crimson Marks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 </head>
-
 
 <body>
 <header class="head">
-    <div id="menu">
-        <img src="images/menu.png" height="50px" width="50px">
+    <!--LOGO I HEADER-->
+    <div class="headerLogo">
+        <a href="index.html">
+            <img src="images/CrimsonMarksLogoFinal.png" alt="Crimson Marks logo">
+        </a>
     </div>
-    <div id="indexpic">
-        <img src="images/test.png" height="100px" width="100px">
+    <!--MENU OVERLAY HTML ELEMENT-->
+    <div id="mainNav" class="overlayMenu">
+        <!--LUKKE KNAP TIL MENU ELEMENT
+        SKAL ERSTATTES MED ANDEN KNAP FRA FONT AWESOME-->
+        <div class="overlayClose">
+            <i class="fas fa-times"></i>
+        </div>
+        <!--LOGO I MENU OVERLAY-->
+        <div class="overlayLogo">
+            <a href="index.html"><img src="images/CrimsonMarksLogoFinal.png" class="overlayLogoImg" alt="Crimson Marks Logo"/></a>
+        </div>
+        <!--MENUPUNKTER-->
+        <div class="overlayContent">
+            <a href="music.html">MUSIC</a>
+            <a href="#">VIDOES</a>
+            <a href="#">ABOUT</a>
+            <a href="#">NEWS</a>
+        </div>
+        <!--SOCIAL MEDIA IKONER-->
+        <div class="overlaySocial">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
     </div>
+    <!--MENU IKON - ÅBNER EMNU OVERLAY-->
+    <span class="overlayOpen">
+        <i class="fas fa-bars"></i>
+    </span>
 </header>
+
+
 <main class="mainFront">
     <div class="box">
         <section class="sec1">
-            <img src="images/example.png" height="200px" width="400px">
+            <img src="images/example.png" height="200px" width="300px">
         </section>
         <section class="sec2">
             <img src="images/example.png" height="100px" width="200px">
@@ -40,6 +69,8 @@
 <footer class="foot">
 
 </footer>
-</body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
 </html>

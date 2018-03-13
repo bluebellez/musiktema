@@ -1,18 +1,78 @@
 * {
   box-sizing: border-box; }
 
-body {
-  margin: 5px; }
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%; }
 
-#menu {
-  display: flex;
-  float: right; }
+.headerLogo {
+  position: absolute;
+  top: 10px;
+  left: 20px; }
+  .headerLogo img {
+    height: 76px; }
 
-#indexpic {
-  display: flex; }
+.overlayMenu {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden; }
+  .overlayMenu .overlayClose {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 36px;
+    color: #818181;
+    cursor: pointer; }
+    .overlayMenu .overlayClose:hover {
+      color: #f1f1f1; }
+  .overlayMenu .overlayLogo {
+    position: relative;
+    top: 20%;
+    display: flex; }
+    .overlayMenu .overlayLogo .overlayLogoImg {
+      width: 60%;
+      height: auto;
+      margin: auto;
+      display: flex; }
+  .overlayMenu .overlayContent {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px; }
+  .overlayMenu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 28px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; }
+    .overlayMenu a:hover {
+      color: #f1f1f1; }
+  .overlayMenu .overlaySocial {
+    font-size: 2rem;
+    color: #818181;
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, 0); }
+    .overlayMenu .overlaySocial:hover {
+      color: #f1f1f1; }
 
-.head {
-  margin-bottom: 50px; }
+.overlayOpen {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 36px;
+  cursor: pointer; }
 
 .sec1 {
   display: inline-flex;
@@ -35,6 +95,24 @@ body {
   justify-content: center; }
 
 @media screen and (min-width: 750px) {
+  .overlayMenu .headerLogo {
+    left: 50px; }
+    .overlayMenu .headerLogo img {
+      height: 130px; }
+  .overlayMenu .overlayClose {
+    right: 50px; }
+  .overlayMenu .overlayLogo {
+    top: 10% !important; }
+    .overlayMenu .overlayLogo .overlayLogoImg {
+      width: 25% !important; }
+  .overlayMenu .overlayContent {
+    top: 15% !important; }
+  .overlayMenu a {
+    font-size: 36px; }
+
+  .overlayOpen {
+    right: 50px; }
+
   .box {
     display: grid;
     grid-template-columns: 50% 25% 25%;

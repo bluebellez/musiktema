@@ -4,15 +4,18 @@
 body {
   margin: 5px; }
 
+header {
+  height: 10vh; }
+
+.box {
+  height: 90vh; }
+
 #menu {
   display: flex;
   float: right; }
 
 #indexpic {
   display: flex; }
-
-.head {
-  margin-bottom: 50px; }
 
 .sec1 {
   display: inline-flex;

@@ -6,15 +6,22 @@ body {
   margin: 5px;
 }
 
+//Styrer højden på header.
+header{
+  height: 10vh;
+}
+
+//Styrer højden på box element.
+.box{
+  height: 90vh;
+}
+
 #menu {
   display: flex;
   float: right;
 }
 #indexpic {
   display: flex;
-}
-.head {
-  margin-bottom: 50px;
 }
 .sec1 {
   display: inline-flex;

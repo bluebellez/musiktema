@@ -35,19 +35,19 @@ body {
   justify-content: center; }
 
 @media screen and (min-width: 750px) {
-  .mainFront {
+  #box {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "gsecEt gsecEt" "gsecTo gsecTre" "gsecFire gsecFem"; }
-    .mainFront .sec1 {
+    #box .sec1 {
       grid-area: gsecEt; }
-    .mainFront .sec2 {
+    #box .sec2 {
       grid-area: gsecTo; }
-    .mainFront .sec3 {
+    #box .sec3 {
       grid-area: gsecTre; }
-    .mainFront .sec4 {
+    #box .sec4 {
       grid-area: gsecFire; }
-    .mainFront .sec5 {
+    #box .sec5 {
       grid-area: gsecFem; } }
 
 /*# sourceMappingURL=styles.css.map */

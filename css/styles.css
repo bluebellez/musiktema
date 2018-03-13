@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 5px; }
+
+#menu {
+  display: flex;
+  float: right; }
+
+#indexpic {
+  display: flex; }
+
+.head {
+  margin-bottom: 50px; }
+
+.sec1 {
+  display: inline-flex;
+  justify-content: center; }
+
+.sec2 {
+  display: inline-flex;
+  justify-content: center; }
+
+.sec3 {
+  display: inline-flex;
+  justify-content: center; }
+
+.sec4 {
+  display: inline-flex;
+  justify-content: center; }
+
+.sec5 {
+  display: inline-flex;
+  justify-content: center; }
+
+@media screen and (min-width: 750px) {
+  body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "head head" "gsec1 gsec1" "gsec2 gsec3" "gsec4 gsec5" "foot foot"; }
+    body .head {
+      grid-area: head; }
+    body .gsec1 {
+      grid-area: gsec1; }
+    body .gsec2 {
+      grid-area: gsec2; }
+    body .gsec3 {
+      grid-area: gsec3; }
+    body .gsec4 {
+      grid-area: gsec4; }
+    body .gsec5 {
+      grid-area: gsec5; }
+    body .foot {
+      grid-area: foot; } }
+
+/*# sourceMappingURL=styles.css.map */

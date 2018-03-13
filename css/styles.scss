@@ -43,32 +43,27 @@ body {
 
 
 @media screen and (min-width: 750px) {
-  body {
+  .mainFront {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-areas: "head head" "gsec1 gsec1" "gsec2 gsec3" "gsec4 gsec5" "foot foot" ;
+    grid-template-areas: "gsecEt gsecEt" "gsecTo gsecTre" "gsecFire gsecFem";
 
-    .head {
-      grid-area: head;
+    .sec1 {
+      grid-area: gsecEt;
     }
-    .gsec1 {
-      grid-area: gsec1;
+    .sec2 {
+      grid-area: gsecTo;
     }
-    .gsec2 {
-      grid-area: gsec2;
+    .sec3 {
+      grid-area: gsecTre;
     }
-    .gsec3 {
-      grid-area: gsec3;
+    .sec4 {
+      grid-area: gsecFire;
     }
-    .gsec4 {
-      grid-area: gsec4;
+    .sec5 {
+      grid-area: gsecFem;
     }
-    .gsec5 {
-      grid-area: gsec5;
-    }
-    .foot {
-      grid-area: foot;
-    }
+
 
 
     }

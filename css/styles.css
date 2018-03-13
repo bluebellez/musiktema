@@ -2,7 +2,10 @@
   box-sizing: border-box; }
 
 body {
-  margin: 5px; }
+  margin: 5px;
+  background-image: url(../images/IMG_5670.jpg);
+  background-size: auto 100vh;
+  background-repeat: no-repeat; }
 
 header {
   height: 10vh; }

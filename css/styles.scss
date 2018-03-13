@@ -43,10 +43,13 @@ body {
 
 
 @media screen and (min-width: 750px) {
-  #box {
+  .box {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "gsecEt gsecEt" "gsecTo gsecTre" "gsecFire gsecFem";
+    grid-template-columns: 50% 25% 25%;
+    grid-template-areas: ". gsecEt gsecEt"
+                          ". gsecEt gsecEt"
+                          ". gsecTo gsecTre"
+                          ". gsecFire gsecFem";
 
     .sec1 {
       grid-area: gsecEt;

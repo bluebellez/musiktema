@@ -35,19 +35,19 @@ body {
   justify-content: center; }
 
 @media screen and (min-width: 750px) {
-  #box {
+  .box {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "gsecEt gsecEt" "gsecTo gsecTre" "gsecFire gsecFem"; }
-    #box .sec1 {
+    grid-template-columns: 50% 25% 25%;
+    grid-template-areas: ". gsecEt gsecEt" ". gsecEt gsecEt" ". gsecTo gsecTre" ". gsecFire gsecFem"; }
+    .box .sec1 {
       grid-area: gsecEt; }
-    #box .sec2 {
+    .box .sec2 {
       grid-area: gsecTo; }
-    #box .sec3 {
+    .box .sec3 {
       grid-area: gsecTre; }
-    #box .sec4 {
+    .box .sec4 {
       grid-area: gsecFire; }
-    #box .sec5 {
+    .box .sec5 {
       grid-area: gsecFem; } }
 
 /*# sourceMappingURL=styles.css.map */

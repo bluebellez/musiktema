@@ -8,44 +8,54 @@ html, body {
   width: 100%;
   height: 100%;
 }
-
 .bodyIndex{
-  background-image: url(../images/IMG_5670.jpg);
+  background-image: url(../images/IMG_5670-2.jpg);
   background-size:cover;
   background-repeat: no-repeat;
 }
 //Styrer højden på box element.
 main{
-  display: flex;
-  align-itmes: center;
   .box{
-    height: 90vh;
-    padding: 10px;
-    .sec1, .sec2, .sec3, .sec4, .sec5{
-      width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    .sec1 {
+      width: 95%;
+      margin: auto;
+      display: flex;
       //Styrer højden på video element.
-      .tied-video{
-        width: 90%;
-        height: 90%;
+      .tied-video {
+        width: 95%;
+        height: 100%;
       }
-      button{
-        border: transparent;
+    }
+    .listenButtons{
+      width: 95%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      .listenBut{
+        border: none;
         background-color: purple;
-        width: 100%;
-        height: 50px;
-        margin-top: 10px;
-        a{
-          font-size: 1.3em;
+        width: 48%;
+        height: 35px;
+        margin-top: 8px;
+        cursor: pointer;
+        a {
+          font-size: 1em;
           display: flex;
           align-items: center;
           justify-content: center;
           text-decoration: none;
           color: white;
         }
-        &:hover{
+        &:hover {
           background-color: crimson;
           transition: .5s;
         }
+      }
+      .marginBut{
+        margin-right: 4%
       }
     }
   }
@@ -57,7 +67,7 @@ main{
   top: 10px;
   left: 20px;
   img{
-    height: 76px;
+    height: 60px;
   }
 }
 //CSS TIL OVERLAY MENU - FØGLER HTML DOM
@@ -74,7 +84,7 @@ main{
   // STYLER LUKKE KNAP
   .overlayClose {
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 20px;
     font-size: 36px;
     color: #818181;
@@ -131,7 +141,7 @@ main{
 //STYLER MENU IKON
 .overlayOpen{
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 20px;
   font-size: 36px;
   cursor: pointer;
@@ -200,30 +210,16 @@ main{
   .overlayOpen{
     right: 50px;
   }
-
-
   .box {
-    display: grid;
-    grid-template-columns: 55% 20% 20%;
-    grid-column-gap: 1%;
-    grid-template-rows: 80px 200px 200px 60px 50px;
-    grid-template-areas: ". . ." ". gsecEt gsecEt" ". gsecEt gsecEt" ". gsecTo gsecTre" ". gsecFire gsecFem";
-
-    .sec1 {
-      grid-area: gsecEt;
+    width: 45%;
+    position: absolute;
+    right: 50px;
+    .listenButtons{
+      .listenBut{
+        a{
+          font-size: 1.2em!important;
+        }
+      }
     }
-    .sec2 {
-      grid-area: gsecTo;
-    }
-    .sec3 {
-      grid-area: gsecTre;
-    }
-    .sec4 {
-      grid-area: gsecFire;
-    }
-    .sec5 {
-      grid-area: gsecFem;
-    }
-
   }
 }

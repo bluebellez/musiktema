@@ -4,12 +4,13 @@
 
 html, body {
   margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
 }
 body {
   background-image: url(../images/IMG_5670.jpg);
-  background-size: auto 100vh;
+  background-size:cover;
   background-repeat: no-repeat;
 }
 
@@ -21,7 +22,49 @@ header{
 //Styrer højden på box element.
 .box{
   height: 90vh;
+  padding: 10px;
 }
+
+.sec1, .sec2, .sec3, .sec4, .sec5{
+  width: 100%;
+}
+
+button{
+  border: transparent;
+  background-color: purple;
+
+  width: 100%;
+  height: 50px;
+
+  margin-top: 10px;
+
+  a{
+    font-size: 1.3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: white;
+  }
+
+  &:hover{
+    background-color: crimson;
+    transition: .5s;
+
+  }
+
+}
+
+//Styrer højden på video element.
+.tied-video{
+  width: 90%;
+  height: 90%;
+}
+
+
+
 
 //CSS TIL LOGO I HEADER
 .headerLogo{
@@ -134,7 +177,7 @@ header{
 
 
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
 
   //STYLER MENU PÅ PC
   .overlayMenu{
@@ -172,11 +215,10 @@ header{
 
   .box {
     display: grid;
-    grid-template-columns: 50% 25% 25%;
-    grid-template-areas: ". gsecEt gsecEt"
-                          ". gsecEt gsecEt"
-                          ". gsecTo gsecTre"
-                          ". gsecFire gsecFem";
+    grid-template-columns: 55% 20% 20%;
+    grid-column-gap: 1%;
+    grid-template-rows: 80px 200px 200px 60px 50px;
+    grid-template-areas: ". . ." ". gsecEt gsecEt" ". gsecEt gsecEt" ". gsecTo gsecTre" ". gsecFire gsecFem";
 
     .sec1 {
       grid-area: gsecEt;
@@ -193,5 +235,6 @@ header{
     .sec5 {
       grid-area: gsecFem;
     }
+
   }
 }

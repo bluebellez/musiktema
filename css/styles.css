@@ -7,41 +7,38 @@ html, body {
   width: 100%;
   height: 100%; }
 
-body {
+.bodyIndex {
   background-image: url(../images/IMG_5670.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
-header {
-  height: 10vh; }
-
-.box {
-  height: 90vh;
-  padding: 10px; }
-
-.sec1, .sec2, .sec3, .sec4, .sec5 {
-  width: 100%; }
-
-button {
-  border: transparent;
-  background-color: purple;
-  width: 100%;
-  height: 50px;
-  margin-top: 10px; }
-  button a {
-    font-size: 1.3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white; }
-  button:hover {
-    background-color: crimson;
-    transition: .5s; }
-
-.tied-video {
-  width: 90%;
-  height: 90%; }
+main {
+  display: flex;
+  align-itmes: center; }
+  main .box {
+    height: 90vh;
+    padding: 10px; }
+    main .box .sec1, main .box .sec2, main .box .sec3, main .box .sec4, main .box .sec5 {
+      width: 100%; }
+      main .box .sec1 .tied-video, main .box .sec2 .tied-video, main .box .sec3 .tied-video, main .box .sec4 .tied-video, main .box .sec5 .tied-video {
+        width: 90%;
+        height: 90%; }
+      main .box .sec1 button, main .box .sec2 button, main .box .sec3 button, main .box .sec4 button, main .box .sec5 button {
+        border: transparent;
+        background-color: purple;
+        width: 100%;
+        height: 50px;
+        margin-top: 10px; }
+        main .box .sec1 button a, main .box .sec2 button a, main .box .sec3 button a, main .box .sec4 button a, main .box .sec5 button a {
+          font-size: 1.3em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: white; }
+        main .box .sec1 button:hover, main .box .sec2 button:hover, main .box .sec3 button:hover, main .box .sec4 button:hover, main .box .sec5 button:hover {
+          background-color: crimson;
+          transition: .5s; }
 
 .headerLogo {
   position: absolute;

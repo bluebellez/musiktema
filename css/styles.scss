@@ -8,63 +8,48 @@ html, body {
   width: 100%;
   height: 100%;
 }
-body {
+
+.bodyIndex{
   background-image: url(../images/IMG_5670.jpg);
   background-size:cover;
   background-repeat: no-repeat;
 }
-
-//Styrer højden på header.
-header{
-  height: 10vh;
-}
-
 //Styrer højden på box element.
-.box{
-  height: 90vh;
-  padding: 10px;
-}
-
-.sec1, .sec2, .sec3, .sec4, .sec5{
-  width: 100%;
-}
-
-button{
-  border: transparent;
-  background-color: purple;
-
-  width: 100%;
-  height: 50px;
-
-  margin-top: 10px;
-
-  a{
-    font-size: 1.3em;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-decoration: none;
-    color: white;
+main{
+  display: flex;
+  align-itmes: center;
+  .box{
+    height: 90vh;
+    padding: 10px;
+    .sec1, .sec2, .sec3, .sec4, .sec5{
+      width: 100%;
+      //Styrer højden på video element.
+      .tied-video{
+        width: 90%;
+        height: 90%;
+      }
+      button{
+        border: transparent;
+        background-color: purple;
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        a{
+          font-size: 1.3em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: white;
+        }
+        &:hover{
+          background-color: crimson;
+          transition: .5s;
+        }
+      }
+    }
   }
-
-  &:hover{
-    background-color: crimson;
-    transition: .5s;
-
-  }
-
 }
-
-//Styrer højden på video element.
-.tied-video{
-  width: 90%;
-  height: 90%;
-}
-
-
-
 
 //CSS TIL LOGO I HEADER
 .headerLogo{

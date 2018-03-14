@@ -47,6 +47,30 @@ main .box {
         transition: .5s; }
     main .box .listenButtons .marginBut {
       margin-right: 4%; }
+.bodyAbout {
+  background-image: url(../images/IMG_5659.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.myStory {
+  font-family: Audiowide, sans-serif;
+  font-size: 28pt;
+  color: crimson;
+  display: flex;
+  justify-content: center; }
+
+.aboutText {
+  font-family: "Crimson Text", sans-serif;
+  font-size: 14pt;
+  color: #bc1825;
+  display: flex;
+  justify-content: center; }
+
+.boxAbout {
+  display: block;
+  justify-content: center;
+  margin-top: 240px; }
+
 
 .headerLogo {
   position: absolute;
@@ -156,6 +180,9 @@ main .box {
 
   .overlayOpen {
     right: 50px; }
+
+  .boxAbout {
+    margin-top: 1px; }
 
   .box {
     width: 45%;

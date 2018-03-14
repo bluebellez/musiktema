@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 
 html, body {
   margin: 0;
@@ -12,7 +14,37 @@ html, body {
   background-image: url(../images/IMG_5670-2.jpg);
   background-size:cover;
   background-repeat: no-repeat;
+
 }
+//Page: About
+.bodyAbout {
+  background-image: url(../images/IMG_5659.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+//Overskrift - page: About
+.myStory {
+  font-family: Audiowide, sans-serif;
+  font-size: 28pt;
+  color: crimson;
+  display: flex;
+  justify-content: center;
+}
+//Text - page: About
+.aboutText {
+  font-family: "Crimson Text", sans-serif;
+  font-size: 14pt ;
+  color: #bc1825;
+  display: flex;
+  justify-content: center;
+}
+.boxAbout {
+  display: block;
+  justify-content: center;
+  margin-top: 240px;
+}
+
 //Styrer højden på box element.
 main{
   .box{
@@ -210,6 +242,12 @@ main{
   .overlayOpen{
     right: 50px;
   }
+
+  //Page - About
+  .boxAbout {
+    margin-top: 1px;
+  }
+
   .box {
     width: 45%;
     position: absolute;

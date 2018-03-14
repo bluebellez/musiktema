@@ -150,6 +150,10 @@ button{
   right: 20px;
   font-size: 36px;
   cursor: pointer;
+  color: #818181;
+  &:hover{
+    color: #f1f1f1;
+  }
 }
 .sec1 {
   display: inline-flex;

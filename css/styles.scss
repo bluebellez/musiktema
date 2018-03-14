@@ -58,7 +58,7 @@ header{
   //STYLER LOGO I OVERLAY MENU
   .overlayLogo{
     position: relative;
-    top:20%;
+    top:15%;
     display: flex;
     .overlayLogoImg{
       width: 60%;
@@ -74,6 +74,8 @@ header{
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
   }
   //STYLER ALLE LINKS I OVERLAY
   a {
@@ -91,11 +93,8 @@ header{
   .overlaySocial{
     font-size: 2rem;
     color: #818181;
-    position: absolute;
-    bottom: 100px;
     display: flex;
-    left: 50%;
-    transform: translate(-50%, 0);
+    justify-content: center;
     &:hover{
       color: #f1f1f1;
     }
@@ -159,7 +158,7 @@ header{
     }
     //STYLER OVERLAY MENUPUNTKER PÅ PC
     .overlayContent{
-      top: 15%!important;
+      top: 10%!important;
     }
     a{
       font-size: 36px;

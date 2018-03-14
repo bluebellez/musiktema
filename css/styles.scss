@@ -1,8 +1,6 @@
 * {
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css?family=Audiowide');
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 
 html, body {
   margin: 0;
@@ -14,7 +12,11 @@ html, body {
   background-image: url(../images/IMG_5670-2.jpg);
   background-size:cover;
   background-repeat: no-repeat;
-
+}
+.bodyMusic{
+  background-image: url(../images/IMG_5659-2.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 //Page: About
 .bodyAbout {
@@ -228,12 +230,6 @@ main{
   .overlayOpen{
     right: 50px;
   }
-
-  //Page - About
-  .boxAbout {
-    margin-top: 1px;
-  }
-
   .box {
     width: 45%;
     position: absolute;

@@ -14,6 +14,11 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat; }
 
+.bodyMusic {
+  background-image: url(../images/IMG_5659-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .bodyAbout {
   background-image: url(../images/IMG_5659.jpg);
   background-size: cover;
@@ -166,9 +171,6 @@ main .box {
 
   .overlayOpen {
     right: 50px; }
-
-  .boxAbout {
-    margin-top: 1px; }
 
   .box {
     width: 45%;

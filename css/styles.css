@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text");
 * {
   box-sizing: border-box; }
 
@@ -11,6 +13,34 @@ html, body {
   background-image: url(../images/IMG_5670-2.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
+
+.bodyAbout {
+  background-image: url(../images/IMG_5659.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.myStory {
+  font-family: Audiowide, sans-serif;
+  font-size: 28pt;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1px; }
+
+.aboutText {
+  font-family: "Crimson Text", sans-serif;
+  font-size: 14pt;
+  color: white;
+  display: flex;
+  justify-content: center; }
+
+.boxAbout {
+  position: absolute;
+  bottom: 2%;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column; }
 
 main .box {
   position: absolute;
@@ -47,30 +77,6 @@ main .box {
         transition: .5s; }
     main .box .listenButtons .marginBut {
       margin-right: 4%; }
-.bodyAbout {
-  background-image: url(../images/IMG_5659.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.myStory {
-  font-family: Audiowide, sans-serif;
-  font-size: 28pt;
-  color: crimson;
-  display: flex;
-  justify-content: center; }
-
-.aboutText {
-  font-family: "Crimson Text", sans-serif;
-  font-size: 14pt;
-  color: #bc1825;
-  display: flex;
-  justify-content: center; }
-
-.boxAbout {
-  display: block;
-  justify-content: center;
-  margin-top: 240px; }
-
 
 .headerLogo {
   position: absolute;
@@ -142,26 +148,6 @@ main .box {
   .overlayOpen:hover {
     color: #f1f1f1; }
 
-.sec1 {
-  display: inline-flex;
-  justify-content: center; }
-
-.sec2 {
-  display: inline-flex;
-  justify-content: center; }
-
-.sec3 {
-  display: inline-flex;
-  justify-content: center; }
-
-.sec4 {
-  display: inline-flex;
-  justify-content: center; }
-
-.sec5 {
-  display: inline-flex;
-  justify-content: center; }
-
 @media screen and (min-width: 800px) {
   .overlayMenu .headerLogo {
     left: 50px; }
@@ -189,6 +175,13 @@ main .box {
     position: absolute;
     right: 50px; }
     .box .listenButtons .listenBut a {
-      font-size: 1.2em !important; } }
+      font-size: 1.2em !important; }
+
+  .boxAbout {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 10%;
+    width: 40%; } }
 
 /*# sourceMappingURL=styles.css.map */

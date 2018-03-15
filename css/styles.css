@@ -29,6 +29,11 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat; }
 
+.bodyVideos {
+  background-image: url(../images/IMG_5659-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .myStory {
   font-family: "Audiowide", serif;
   font-size: 28pt;
@@ -63,6 +68,39 @@ html, body {
   bottom: 2%;
   width: 90%;
   margin-left: 5%; }
+
+.boxVideo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60%;
+  transform: translate(0, -60%);
+  padding: 5%; }
+
+.boxVideo > div {
+  position: relative; }
+  .boxVideo > div #about_video {
+    width: 100%; }
+
+.boxVideo > div:nth-of-type(1) {
+  flex: 1 1 60%;
+  padding: 0 20px 0 0; }
+
+.boxVideo > div:nth-of-type(2) {
+  flex: 1 1 40%;
+  padding: 0 0 0 20px; }
+
+.boxVideo aside {
+  position: absolute;
+  font-family: "Crimson Text", sans-serif;
+  color: #f1f1f1;
+  font-size: 1.3em;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: none;
+  padding: 5px;
+  text-align: center; }
 
 .mainFront .boxIndex {
   position: absolute;
@@ -258,6 +296,12 @@ html, body {
       margin: 2% auto 0 auto !important; }
       .boxNews .newsArticle img {
         width: 45% !important;
-        margin: auto; } }
+        margin: auto; }
+
+  .boxVideo {
+    width: 55%;
+    right: 5% !important;
+    top: 25%;
+    transform: translate(0, -25%); } }
 
 /*# sourceMappingURL=styles.css.map */

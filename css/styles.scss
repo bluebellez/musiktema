@@ -42,6 +42,11 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.bodyVideos {
+  background-image: url(../images/IMG_5659-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 //Overskrift - page: About
 .myStory {
@@ -83,6 +88,46 @@ html, body {
     width: 90%;
     margin-left: 5%;
   }
+}
+
+.boxVideo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60%;
+  transform: translate(0, -60%);
+  padding: 5%
+}
+
+.boxVideo > div {
+  position: relative;
+  #about_video{
+    width: 100%;
+  }
+  // box-sizing: border-box;
+}
+
+.boxVideo > div:nth-of-type(1) {
+  flex: 1 1 60%;
+  padding: 0 20px 0 0;
+}
+
+.boxVideo > div:nth-of-type(2) {
+  flex: 1 1 40%;
+  padding: 0 0 0 20px;
+}
+
+.boxVideo aside {
+  position: absolute;
+  font-family: $textFont;
+  color: $lightGrey;
+  font-size: 1.3em;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: none;
+  padding: 5px;
+  text-align: center;
 }
 
 //Styrer højden på box element.
@@ -347,4 +392,12 @@ html, body {
       }
     }
   }
+
+  .boxVideo{
+    width: 55%;
+    right: 5%!important;
+    top: 25%;
+    transform: translate(0, -25%);
+  }
+
 }

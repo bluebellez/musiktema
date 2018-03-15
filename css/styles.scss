@@ -89,8 +89,7 @@ html, body {
 .mainFront{
   .boxIndex{
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    bottom: 5%;
     .sec1 {
       width: 95%;
       margin: auto;
@@ -303,6 +302,8 @@ html, body {
     width: 45%;
     position: absolute;
     right: 50px;
+    top: 50%;
+    transform: translate(0, -50%);
     .listenButtons{
       .listenBut{
         a{

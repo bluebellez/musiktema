@@ -10,6 +10,9 @@ $headerFont: "Audiowide", serif;
 $textFont: "Crimson Text", sans-serif;
 $crimsonRed: #990000;
 $crimsonPurble: #660099;
+$darkGrey: #818181;
+$lightGrey: #f1f1f1;
+
 
 
 html, body {
@@ -53,7 +56,7 @@ html, body {
 .aboutText {
   font-family: $textFont;
   font-size: 14pt ;
-  color: white;
+  color: $lightGrey;
   display: flex;
   justify-content: center;
 }
@@ -156,10 +159,10 @@ html, body {
     top: 20px;
     right: 20px;
     font-size: 36px;
-    color: #818181;
+    color: $darkGrey;
     cursor: pointer;
     &:hover{
-      color: #f1f1f1;
+      color: $lightGrey;
     }
   }
   //STYLER LOGO I OVERLAY MENU
@@ -190,21 +193,21 @@ html, body {
     text-decoration: none;
     font-family: $textFont;
     font-size: 28px;
-    color: #818181;
+    color: $darkGrey;
     display: block;
     transition: 0.3s;
     &:hover{
-      color: #f1f1f1
+      color: $lightGrey;
     }
   }
   //STYLER SOCAIL IKONER I OVERLAY MENU
   .overlaySocial{
     font-size: 2rem;
-    color: #818181;
+    color: $darkGrey;
     display: flex;
     justify-content: center;
     &:hover{
-      color: #f1f1f1;
+      color: $lightGrey;
     }
   }
 }
@@ -215,9 +218,9 @@ html, body {
   right: 20px;
   font-size: 36px;
   cursor: pointer;
-  color: #818181;
+  color: $darkGrey;
   &:hover{
-    color: #f1f1f1;
+    color: $lightGrey;
   }
 }
 
@@ -229,11 +232,11 @@ html, body {
     bottom: 5%;
     left: 5%;
     margin: auto;
-    background-color: #f1f1f1;
+    background-color: white;
     overflow-y: scroll;
     padding: 5%;
     .newsArticle{
-      background-color: white;
+      background-color: $lightGrey;
       padding: 5%;
       width: 100%;
       font-family: $textFont;

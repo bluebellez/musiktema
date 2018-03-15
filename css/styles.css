@@ -40,7 +40,7 @@ html, body {
 .aboutText {
   font-family: "Crimson Text", sans-serif;
   font-size: 14pt;
-  color: white;
+  color: #f1f1f1;
   display: flex;
   justify-content: center; }
 
@@ -179,11 +179,11 @@ html, body {
   bottom: 5%;
   left: 5%;
   margin: auto;
-  background-color: #f1f1f1;
+  background-color: white;
   overflow-y: scroll;
   padding: 5%; }
   .mainNews .boxNews .newsArticle {
-    background-color: white;
+    background-color: #f1f1f1;
     padding: 5%;
     width: 100%;
     font-family: "Crimson Text", sans-serif;

@@ -20,12 +20,17 @@ html, body {
   background-repeat: no-repeat; }
 
 .bodyAbout {
-  background-image: url(../images/IMG_5659.jpg);
+  background-image: url(../images/IMG_5659-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.bodyNews {
+  background-image: url(../images/IMG_5659-2.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
 .myStory {
-  font-family: Audiowide, sans-serif;
+  font-family: "Audiowide", serif;
   font-size: 28pt;
   color: white;
   display: flex;
@@ -47,40 +52,53 @@ html, body {
   display: flex;
   flex-direction: column; }
 
-main .box {
+.boxMusic .spotifyMusic {
+  height: 50%;
+  min-height: 300px;
+  border: none;
+  allowtransperancy: true;
+  allow: encrypted-media;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 2%;
+  width: 90%;
+  margin-left: 5%; }
+
+.mainFront .boxIndex {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%); }
-  main .box .sec1 {
+  .mainFront .boxIndex .sec1 {
     width: 95%;
     margin: auto;
     display: flex; }
-    main .box .sec1 .tied-video {
+    .mainFront .boxIndex .sec1 .tied-video {
       width: 95%;
-      height: 100%; }
-  main .box .listenButtons {
+      height: 100%;
+      margin: auto; }
+  .mainFront .boxIndex .listenButtons {
     width: 95%;
     display: flex;
     flex-wrap: wrap;
     margin: auto; }
-    main .box .listenButtons .listenBut {
+    .mainFront .boxIndex .listenButtons .listenBut {
       border: none;
-      background-color: purple;
+      background-color: #660099;
       width: 48%;
       height: 35px;
       margin-top: 8px;
       cursor: pointer; }
-      main .box .listenButtons .listenBut a {
+      .mainFront .boxIndex .listenButtons .listenBut a {
         font-size: 1em;
         display: flex;
         align-items: center;
         justify-content: center;
         text-decoration: none;
         color: white; }
-      main .box .listenButtons .listenBut:hover {
-        background-color: crimson;
+      .mainFront .boxIndex .listenButtons .listenBut:hover {
+        background-color: #990000;
         transition: .5s; }
-    main .box .listenButtons .marginBut {
+    .mainFront .boxIndex .listenButtons .marginBut {
       margin-right: 4%; }
 
 .headerLogo {
@@ -129,6 +147,7 @@ main .box {
   .overlayMenu a {
     padding: 8px;
     text-decoration: none;
+    font-family: "Crimson Text", sans-serif;
     font-size: 28px;
     color: #818181;
     display: block;
@@ -153,6 +172,39 @@ main .box {
   .overlayOpen:hover {
     color: #f1f1f1; }
 
+.mainNews .boxNews {
+  width: 90%;
+  height: 60%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  margin: auto;
+  background-color: #f1f1f1;
+  overflow-y: scroll;
+  padding: 5%; }
+  .mainNews .boxNews .newsArticle {
+    background-color: white;
+    padding: 5%;
+    width: 100%;
+    font-family: "Crimson Text", sans-serif;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column; }
+    .mainNews .boxNews .newsArticle h3 {
+      font-weight: bold;
+      font-family: "Audiowide", serif;
+      margin-bottom: 2px;
+      font-size: 1.7em; }
+    .mainNews .boxNews .newsArticle .newsDate {
+      font-size: 0.8em;
+      margin-top: 0px; }
+    .mainNews .boxNews .newsArticle .newsText {
+      font-size: 1em; }
+    .mainNews .boxNews .newsArticle img {
+      width: 100%;
+      margin: auto; }
+
 @media screen and (min-width: 800px) {
   .overlayMenu .headerLogo {
     left: 50px; }
@@ -172,11 +224,11 @@ main .box {
   .overlayOpen {
     right: 50px; }
 
-  .box {
+  .boxIndex {
     width: 45%;
     position: absolute;
     right: 50px; }
-    .box .listenButtons .listenBut a {
+    .boxIndex .listenButtons .listenBut a {
       font-size: 1.2em !important; }
 
   .boxAbout {
@@ -184,6 +236,27 @@ main .box {
     top: 50%;
     transform: translate(0, -50%);
     right: 10%;
-    width: 40%; } }
+    width: 40%; }
+
+  .boxMusic .spotifyMusic {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 10%;
+    width: 40%; }
+
+  .boxNews {
+    height: 70% !important;
+    padding: 0% 0% 2% 0% !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto; }
+    .boxNews .newsArticle {
+      width: 45% !important;
+      padding: 2% !important;
+      margin: 2% auto 0 auto !important; }
+      .boxNews .newsArticle img {
+        width: 45% !important;
+        margin: auto; } }
 
 /*# sourceMappingURL=styles.css.map */

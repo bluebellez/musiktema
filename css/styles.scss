@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+
+//VARIABLER DEFINERET
+$headerFont: "Audiowide", serif;
+$textFont: "Crimson Text", sans-serif;
+$crimsonRed: #990000;
+$crimsonPurble: #660099;
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -22,14 +30,19 @@ html, body {
 }
 //Page: About
 .bodyAbout {
-  background-image: url(../images/IMG_5659.jpg);
+  background-image: url(../images/IMG_5659-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bodyNews {
+  background-image: url(../images/IMG_5659-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 //Overskrift - page: About
 .myStory {
-  font-family: Audiowide, sans-serif;
+  font-family: $headerFont;
   font-size: 28pt;
   color: white;
   display: flex;
@@ -38,7 +51,7 @@ html, body {
 }
 //Text - page: About
 .aboutText {
-  font-family: "Crimson Text", sans-serif;
+  font-family: $textFont;
   font-size: 14pt ;
   color: white;
   display: flex;
@@ -54,10 +67,24 @@ html, body {
   flex-direction: column;
 }
 
+.boxMusic{
+  .spotifyMusic{
+    height: 50%;
+    min-height: 300px;
+    border: none;
+    allowtransperancy: true;
+    allow: encrypted-media;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 2%;
+    width: 90%;
+    margin-left: 5%;
+  }
+}
 
 //Styrer højden på box element.
-main{
-  .box{
+.mainFront{
+  .boxIndex{
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -69,6 +96,7 @@ main{
       .tied-video {
         width: 95%;
         height: 100%;
+        margin: auto;
       }
     }
     .listenButtons{
@@ -78,7 +106,7 @@ main{
       margin: auto;
       .listenBut{
         border: none;
-        background-color: purple;
+        background-color: $crimsonPurble;
         width: 48%;
         height: 35px;
         margin-top: 8px;
@@ -92,7 +120,7 @@ main{
           color: white;
         }
         &:hover {
-          background-color: crimson;
+          background-color: $crimsonRed;
           transition: .5s;
         }
       }
@@ -102,7 +130,6 @@ main{
     }
   }
 }
-
 //CSS TIL LOGO I HEADER
 .headerLogo{
   position: absolute;
@@ -161,6 +188,7 @@ main{
   a {
     padding: 8px;
     text-decoration: none;
+    font-family: $textFont;
     font-size: 28px;
     color: #818181;
     display: block;
@@ -193,10 +221,46 @@ main{
   }
 }
 
-
-
-
-
+.mainNews{
+  .boxNews{
+    width: 90%;
+    height: 60%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    margin: auto;
+    background-color: #f1f1f1;
+    overflow-y: scroll;
+    padding: 5%;
+    .newsArticle{
+      background-color: white;
+      padding: 5%;
+      width: 100%;
+      font-family: $textFont;
+      margin-right: 5%;
+      margin-bottom: 5%;
+      h3{
+        font-weight: bold;
+        font-family: $headerFont;
+        margin-bottom: 2px;
+        font-size: 1.7em;
+      }
+      .newsDate{
+        font-size: 0.8em;
+        margin-top: 0px;
+      }
+      .newsText{
+        font-size: 1em;
+      }
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 100%;
+        margin: auto;
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 800px) {
 
@@ -232,7 +296,7 @@ main{
   .overlayOpen{
     right: 50px;
   }
-  .box {
+  .boxIndex {
     width: 45%;
     position: absolute;
     right: 50px;
@@ -253,5 +317,30 @@ main{
     transform: translate(0, -50%);
     right: 10%;
     width: 40%;
+  }
+  .boxMusic{
+    .spotifyMusic{
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 10%;
+      width: 40%;
+    }
+  }
+  .boxNews{
+    height: 70%!important;
+    padding: 0% 0% 2% 0%!important;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    .newsArticle{
+      width: 45%!important;
+      padding: 2%!important;
+      margin: 2% auto 0 auto!important;
+      img{
+        width: 45%!important;
+        margin: auto;
+      }
+    }
   }
 }

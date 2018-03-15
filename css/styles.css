@@ -100,7 +100,8 @@ html, body {
   transform: translate(-50%, 0);
   display: none;
   padding: 5px;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .mainFront .boxIndex {
   position: absolute;

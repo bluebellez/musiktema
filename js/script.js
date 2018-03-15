@@ -28,7 +28,7 @@ $(document).ready (function(){
 
     my_video.on("timeupdate", function () {
         current_time = my_video[0].currentTime;
-        current_time = current_time - 5;
+        current_time = current_time - 7;
         if (current_time > 10) {
             allAsides.hide();
             one.show();
